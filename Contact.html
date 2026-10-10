@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online shop/contact</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="./css/contact.css">
+</head>
+<body>
+    <!-- .........................header............................ -->
+    <header> 
+        <nav>
+            <div class="showMenu">
+                    <!-- آیکن موجود در هدر -->
+                    <button
+                        type="button"
+                        id="menuToggle"
+                        class="menu-toggle"
+                        aria-label="Open navigation menu"
+                        aria-expanded="false"
+                        aria-controls="jananDropdown"
+                    >
+                        <i class="fa fa-bars" aria-hidden="true"></i>
+                    </button>
+                </div>
+            <div class="right">
+                <div class="menu">
+                <ul>
+                    <li><a href="./index.html" target="_blank"><span class="fa fa-home"></span>Home</a></li>
+                    <li><a href="./Catagories.html" target="_blank">▼Catagories</a></li>
+                    <li><a href="./collection.html" target="_blank"><span class="fa fa-star"></span>Collection</a></li>
+                    <li><a href="./about.html" target="_blank"><span class="fa fa-info-circle"></span>About Us </a></li>
+                    <li><a href="./contact.html" target="_blank"><span class="fa fa-address-book"></span>Contact Us</a></li>
+                    <li><a href="./login.html" target="_blank"><span class="fa fa-sign-in"></span>Login</a></li>
+                    <li><a href="./register.html" target="_blank"><span class="fa fa-user-plus"></span>Register</a></li>
+                </ul>
+                </div>
+                <div class="left">
+                <div class="img">
+                    <img src="./image/logoLight.jpeg" alt="logo">
+                </div>   
+            </div>
+            </div>
+        </nav>
+    </header>
+     <!-- JANAN DROPDOWN MENU -->
+
+<div class="menu-overlay" id="menuOverlay"></div>
+<nav
+    class="janan-dropdown"
+    id="jananDropdown"
+    aria-label="Main navigation"
+    aria-hidden="true"
+    inert
+>
+    <div class="dropdown-header">
+        <div class="dropdown-brand">
+            <span>JANAN</span>
+            <small>Online Shop</small>
+        </div>
+        <button
+            type="button"
+            class="menu-close"
+            id="menuClose"
+            aria-label="Close navigation menu"
+        >
+            <i class="fa fa-times" aria-hidden="true"></i>
+        </button>
+    </div>
+    <ul class="dropdown-list">
+        <li>
+            <a href="./index.html" target="_blank" class="menu-link">
+                <i class="fa fa-home" aria-hidden="true"></i>
+                <span>Home</span>
+            </a>
+        </li>
+        <li class="has-submenu">
+            <button
+                type="button"
+                class="submenu-toggle"
+                aria-expanded="false"
+                aria-controls="categoriesSubmenu"
+            >
+                <span>
+                    <i class="fa fa-th-large" aria-hidden="true"></i>
+                    Categories
+                </span>
+                <i class="fa fa-chevron-down arrow" aria-hidden="true"></i>
+            </button>
+            <ul class="submenu" id="categoriesSubmenu" hidden>
+                <li><a href="./Catagories.html#women-fashion" target="_blank">Women's Fashion</a></li>
+                <li><a href="./Catagories.html#men-fashion" target="_blank">Men's Fashion</a></li>
+                <li><a href="./Catagories.html#children-fashion" target="_blank">Children's Fashion</a></li>
+                <li><a href="./Catagories.html#accessories" target="_blank">Jewelry & Accessories</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="./collection.html" target="_blank" class="menu-link">
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <span>Collection</span>
+            </a>
+        </li>
+        <li>
+            <a href="./about.html" target="_blank" class="menu-link">
+                <i class="fa fa-heart" aria-hidden="true"></i>
+                <span>About Us</span>
+            </a>
+        </li>
+        <li>
+            <a href="./Contact.html" target="_blank" class="menu-link">
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+                <span>Contact Us</span>
+            </a>
+        </li>
+        <li>
+            <a href="./login.html" target="_blank" class="menu-link">
+                <i class="fa fa-sign-in" aria-hidden="true"></i>
+                <span>Log in</span>
+            </a>
+        </li>
+        <li>
+            <a href="./register.html" target="_blank" class="menu-link">
+                <i class="fa fa-user-plus" aria-hidden="true"></i>
+                <span>Register</span>
+            </a>
+        </li>
+    </ul>
+
+    <div class="dropdown-footer">
+        <p>Where Every Click Brings Something Beautiful.</p>
+        <span>© Janan Online Shop</span>
+    </div>
+</nav>
+
+
+
+    <main class="contact-page">
+        <!-- ........CONTACT HERO......... -->
+        <section class="contact-hero">
+            <div class="contact-hero-content">
+                <h1><span>JANAN </span>ONLINE SHOP</h1>
+                <h2>How Can We Help?</h2>
+                <p>
+                    Have a question about your order, a product, or your
+                    shopping experience? We are here to help you.
+                </p>
+
+                <a href="#contact-form" class="hero-contact-btn">
+                    Contact Us
+                    <i class="fa fa-arrow-down"></i>
+                </a>
+            </div>
+        </section>
+
+        <!-- CONTACT CONTENT -->
+        <section class="contact-section">
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h2>Let’s Talk About Your Shopping Experience</h2>
+                    <p class="contact-description">
+                        At <b> Janan Online Shop</b>, we care about making your shopping
+                        experience simple, comfortable, and enjoyable.
+                        Send us your questions or feedback and our team will
+                        be happy to help.
+                    </p>
+                    <!-- Support Card -->
+                    <div class="support-card">
+                        <div class="support-icon">
+                            <i class="fa fa-shopping-bag"></i>
+                        </div>
+                        <div>
+                            <h3>Order Support</h3>
+                            <p>
+                                Need help with your order or delivery?
+                                Tell us what you need.
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <!-- Product Card -->
+                    <div class="support-card">
+                        <div class="support-icon">
+                            <i class="fa fa-shopping-cart"></i>
+                        </div>
+                        <div>
+                            <h3>Product Questions</h3>
+                            <p>
+                                Ask us about products, sizes, availability,
+                                or anything before you buy.
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <!-- Feedback Card -->
+                    <div class="support-card">
+                        <div class="support-icon">
+                            <i class="fa fa-heart"></i>
+                        </div>
+                        <div>
+                            <h3>Your Feedback Matters</h3>
+                            <p>
+                                Share your ideas and feedback to help us
+                                improve Janan Online Shop.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- ==================== CONTACT FORM ==================== -->
+                <div class="contact-form-wrapper" id="contact-form">
+                    <form class="contact-form">
+                        <div class="form-heading">
+                            <h2>Send Us a Message</h2>
+                            <p>
+                                Fill in the form below and tell us how we
+                                can help you.
+                            </p>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">
+                                    Your Name
+                                </label>
+                                <input
+                                    type="text"
+                                    id="name"
+                                    name="name"
+                                    placeholder="Enter your name"
+                                    required
+                                >
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">
+                                    Email Address
+                                </label>
+                                <input
+                                    type="email"
+                                    id="email"
+                                    name="email"
+                                    placeholder="Enter your email"
+                                    required
+                                >
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">
+                                What Can We Help With?
+                            </label>
+                            <select id="subject" name="subject" required>
+                                <option value="" selected disabled>
+                                    Select an option
+                                </option>
+                                <option value="order">
+                                    My Order
+                                </option>
+                                <option value="product">
+                                    Product Question
+                                </option>
+                                <option value="delivery">
+                                    Delivery
+                                </option>
+                                <option value="return">
+                                    Return or Exchange
+                                </option>
+                                <option value="feedback">
+                                    Feedback
+                                </option>
+                                <option value="other">
+                                    Other
+                                </option>
+                            </select>
+                        </div>
+
+
+                        <div class="form-group">
+                            <label for="message">
+                                Your Message
+                            </label>
+                            <textarea
+                                id="message"
+                                name="message"
+                                rows="6"
+                                placeholder="Write your message here..."
+                                required
+                            ></textarea>
+                        </div>
+
+                        <button
+                            type="submit"
+                            class="contact-btn"
+                        >
+                            Send Message
+                            <i class="fa fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+        
+    <!-- ..................... FOOTER...............-->
+    <footer class="footer">
+        <div class="footer-main">
+            <!-- LEFT SIDE -->
+            <div class="footer-left">
+                <!-- Social Media -->
+                <div class="footer-social">
+                    <a href="https://youtube.com/@shahjanrasooli-x5p?si=QmDTnYah4IqXJ6ZF"
+                    target="_blank"
+                    aria-label="YouTube">
+                        <i class="fa fa-youtube"></i>
+                    </a>
+
+                    <a href="https://www.facebook.com/share/1CmfFQXp4T/"
+                    target="_blank"
+                    aria-label="Facebook">
+                        <i class="fa fa-facebook"></i>
+                    </a>
+
+                    <a href="https://instagram.com/designx_learning_academy?stkn=MWkzbnJyMzlkZXVndg%3D%3D"
+                    target="_blank"
+                    aria-label="Instagram">
+                        <i class="fa fa-instagram"></i>
+                    </a>
+
+                    <a href="mailto:shahjanrasooli51@gmail.com"
+                    aria-label="Email">
+                        <i class="fa fa-envelope"></i>
+                    </a>
+
+                    <a href="https://wa.me/93778587800"
+                    target="_blank"
+                    aria-label="WhatsApp">
+                        <i class="fa fa-whatsapp"></i>
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/shah-jan-rasooli-017382436/"
+                    target="_blank"
+                    aria-label="LinkedIn">
+                        <i class="fa fa-linkedin"></i>
+                    </a>
+
+                    <a href="https://github.com/ShahJan-Ai"
+                    target="_blank"
+                    aria-label="GitHub">
+                        <i class="fa fa-github"></i>
+                    </a>
+                </div>
+
+                <!-- Authentication -->
+                <div class="footer-auth">
+                    <a href="./login.html" target="_blank" class="auth-btn">
+                        Login
+                    </a>
+                    <a href="./register.html" target="_blank" class="auth-btn">
+                        Regisre Now
+                    </a>
+                </div>
+            </div>
+            <!-- RIGHT SIDE -->
+            <div class="footer-right">
+                <!-- Contact Number -->
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fa fa-phone"></i>
+                    </div>
+                    <div class="contact-info">
+                        <h3>Contact Number</h3>
+                        <a href="tel:+93778587800">
+                            +93 778 587 800
+                        </a>
+                        <a href="tel:+93794331300">
+                            +93 794 331 300
+                        </a>
+                    </div>
+                </div>
+                <!-- Email -->
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fa fa-envelope"></i>
+                    </div>
+                    <div class="contact-info">
+                        <h3>Email</h3>
+                        <a href="mailto:shahjanrasooli51@gmail.com">
+                            shahjanrasooli51@gmail.com
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Location -->
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fa fa-map-marker"></i>
+                    </div>
+
+                    <div class="contact-info">
+                        <h3>Our Location</h3>
+                        <p>
+                            Mazar-i-Sharif, Balkh, Afghanistan
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    <!-- ..................... FOOTER. STATS..............-->
+        <div class="footer-stats">
+            <div class="stat-box">
+                <strong>20,000+</strong>
+                <span>Products</span>
+            </div>
+            <div class="stat-box">
+                <strong>2,000+</strong>
+                <span>Registered</span>
+            </div>
+            <div class="stat-box">
+                <strong>500+</strong>
+                <span>Comments</span>
+            </div>
+        </div>
+
+        <!--  COPYRIGHT  -->
+        <div class="footer-bottom">
+            <p>
+                &copy; 2026 ShahjanRasooli51@gmail.com
+            </p>
+        </div>
+    </footer>
+    <script src="js/index.js"></script>
+
+
+</body>
+</html>
