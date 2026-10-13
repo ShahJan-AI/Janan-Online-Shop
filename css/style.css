@@ -90,14 +90,11 @@ nav .right{
     background: var(--color2);
 }
 .showMenu{
-    /* width: 15%; */
     position: absolute;
     left: 25px;
     top: 9px;
     font-size: xx-large;
     text-align: center;
-    width: 30px;
-    height: 30px;
 }
 .showMenu button{
     border: none;
@@ -108,6 +105,10 @@ nav .right{
     height: 30px;
     font-size: xx-large;
 }
+.showMenu button i:hover{
+    background: var(--color);
+}
+
 /* .........................................header responsive................................... */
 
 /* Tablet */

@@ -1,3 +1,4 @@
+
 const menuToggle = document.getElementById("menuToggle");
 const dropdown = document.getElementById("jananDropdown");
 const menuClose = document.getElementById("menuClose");
@@ -36,8 +37,10 @@ menuToggle.addEventListener("click", () => {
 
 // Close button
 menuClose.addEventListener("click", closeMenu);
+
 // Close when clicking outside the menu
 overlay.addEventListener("click", closeMenu);
+
 // Expand or collapse submenus
 submenuButtons.forEach((button) => {
     button.addEventListener("click", () => {
